@@ -157,7 +157,7 @@ a:hover, a:active, a:focus {
         .header .wrapper .b-content {
           max-width: 400px;
           left: 3.2%;
-          top: 0%;
+          top: 0.5%;
           font-size: 11px;
           position: fixed;
           z-index: 10000001; } }
