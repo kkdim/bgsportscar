@@ -1,0 +1,102 @@
+.footer{
+  width: 100%;
+  max-width:1400px;
+  margin: 0 auto;
+  .wrapper{
+    width: 100%;
+    max-width: 1400px;
+    background-color: #2d2d2d;
+    color: #ffff;
+    .b-content{
+      width: 100%;
+      max-width: 1050px;
+      overflow: hidden;
+      margin: 0 auto;
+      line-height: 25px;
+      padding-bottom: 30px;
+      .item-head{
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        @include breakpoint(tablet){
+          padding-bottom: 15px;
+        }
+        h1{
+          font-size: 1.3rem;
+        }
+        img{
+          margin-bottom: 10px;
+          width: 100%;
+          max-width: 80px;
+        }
+      }
+      .b-float-content{
+        float: left;
+        overflow: hidden;
+        margin-left: 17%;
+        @include breakpoint(tablet){
+          float: none;
+          text-align: center;
+          margin-left: 0;
+          padding-bottom: 25px;
+        }
+        img{
+          float: left;
+          width: 12px;
+          margin-right: 5px;
+          @include breakpoint(tablet){
+            display: none;
+          }
+        }
+        p{
+          font-size: 15px;
+          color: #616161;
+          max-width: 300px;
+          @include breakpoint(tablet){
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+      .item-head h1{
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      .b-map{
+        width: 100%;
+        max-width: 300px;
+        height: 118px;
+        float: right;
+        margin-right: 8%;
+        z-index: 100001;
+        @include breakpoint(tablet){
+          float: none;
+          margin: 0 auto;
+        }
+      }
+      .item-social{
+        width: 110px;
+        margin: 0 auto;
+      }
+      .item-social img{
+        max-width: 35px;
+        margin-left: 11px;
+        margin-top: 35px;
+      }
+      .item-social img:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+  .b-copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #242424;
+    p{
+      color: #616161;
+      font-size: 0.7rem;
+      padding: 13px;
+    }
+  }
+}

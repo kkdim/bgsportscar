@@ -1,0 +1,159 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  .wrapper{
+    width: 100%;
+    .b-media img {
+      display: block;
+      width: 100%;
+      max-width: 1400px;
+      opacity: 0.97;
+      position: relative;
+      margin: 0 auto;
+      z-index: 0;
+    }
+    .nav {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      .item-menu{
+        width: 100%;
+        max-width: 1400px;
+        position: fixed;
+        list-style: none;
+        background-color: #36373a;
+        opacity: 0.8;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        z-index: 10001;
+        img{
+          width: 40px;
+          float: right;
+          margin-right: 20px;
+          display: none;
+          @include breakpoint(mobile){
+            display: block;
+          }
+        }
+      }
+      ul{
+        width: 100%;
+        max-width: 1400px;
+        position: fixed;
+        list-style: none;
+        background-color: #36373a;
+        opacity: 0.8;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        z-index: 10001;
+        @include breakpoint(mobile){
+          display: none;
+        }
+        li{
+          display: inline-block;
+          font-size: 0.74rem;
+          line-height: 40px;
+          margin-right: 80px;
+          a{
+            text-decoration: none;
+            display: block;
+            color: #ffff;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: .3s background-color;
+          }
+          a:hover {
+            font-weight: bold;
+            color: #b51f2b;
+
+          }
+          a.active {
+           background-color: #fff;
+           color: #444;
+           cursor: default;
+         }
+        }
+        li:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    .b-content{
+      color: white;
+      text-shadow: 4px 2px 5px black;
+      font-style: italic;
+      letter-spacing: 3px;
+      position: absolute;
+      left: 36.2%;
+      top: 24%;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      z-index: 100;
+      @include breakpoint(tablet){
+        left: 36.2%;
+        top: 21%;
+        font-size: 13px;
+      }
+      @include breakpoint(mobile){
+        max-width: 400px;
+        left: 3.2%;
+        top: 0%;
+        font-size: 11px;
+        position: fixed;
+        z-index: 10000001;
+      }
+      .b-animate-1{
+        width: 100%;
+        max-width: 11px;
+        color: #d40011;
+        font-size: 3em;
+        float: left;
+        margin-right: 25px;
+        @include breakpoint(tablet){
+          margin-right: 18px;
+        }
+        @include breakpoint(mobile){
+          margin-right: 15px;
+        }
+      }
+      .b-animate-2{
+        width: 100%;
+        max-width: 15px;
+        color: #d40011;
+        font-size: 3em;
+        float: left;
+        margin-right: 25px;
+        @include breakpoint(tablet){
+          margin-right: 17px;
+        }
+        @include breakpoint(mobile){
+          margin-right: 13px;
+        }
+      }
+      .b-animate-3{
+        font-size: 2em;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 2.1%;
+        float: left;
+        @include breakpoint(tablet){
+          margin-top: 1.8%;
+        }
+        @include breakpoint(mobile){
+          margin-top: 2%;
+        }
+        @include breakpoint(littlemobile){
+          margin-top: 2.1%;
+        }
+      }
+      h1{
+        font-family: 'Black Ops One', cursive;
+      }
+    }
+  }
+}
+.bounceInRight{animation-delay:0.2s;}
+.bounceInLeft{animation-delay: 0.5s;}
