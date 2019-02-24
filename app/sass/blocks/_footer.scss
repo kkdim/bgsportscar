@@ -1,10 +1,8 @@
 .footer{
   width: 100%;
-  max-width:1400px;
   margin: 0 auto;
   .wrapper{
     width: 100%;
-    max-width: 1400px;
     background-color: #2d2d2d;
     color: #ffff;
     .b-content{
@@ -25,9 +23,11 @@
           font-size: 1.3rem;
         }
         img{
-          margin-bottom: 10px;
+          margin-bottom: 12px;
           width: 100%;
-          max-width: 80px;
+          max-width: 138px;
+          height: 3px;
+          border-radius: 10px;
         }
       }
       .b-float-content{
