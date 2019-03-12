@@ -12,13 +12,14 @@
 		h1{
 			width: 100%;
 			text-align:center;
-			font-size: 1.6rem;
-			margin-bottom: 35px;
+			font-size: 2rem;
+			margin-bottom: 15px;
 		}
 	}
 	.b-table{
 		float: left;
     	width: 50%;
+    	margin-top: 20px;
     	@include breakpoint(mobile){
 	       	width:100%;
 	    }
@@ -32,8 +33,12 @@
 			padding-top: 1%;
     		font-size: 1.3rem;
 	        h2{
+	        	text-align: left;
+	        	margin-left: 1%;
+	        	font-style: italic;
+    			text-shadow: 1.5px 0.7px 0.7px #7b7373;
 	        	@include breakpoint(mobile){
-	          		margin-left: 15px;
+	          		margin-left: 20px;
 	          		text-align: left;
 	        	}
 	        }
@@ -42,7 +47,9 @@
 			p{
 				font-size: 1.2rem;
 				line-height: 30px;
-				text-align: center;
+				margin-left: 1%;
+				width: 100%;
+				max-width: 220px;
 				@include breakpoint(mobile){
 	          		margin-left: 15px;
 	          		text-align: left;
